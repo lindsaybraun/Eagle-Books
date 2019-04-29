@@ -16,4 +16,9 @@ extension Double {
         return roundedValue
         
     }
+
+    var significantFractionalDecimalDigits: Int {
+        return max(-exponent, 0)
+    }
+
 }

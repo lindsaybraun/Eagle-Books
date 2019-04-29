@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AA4D7B503F5901558DB57FA /* Pods_Eagle_Books_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB559EA58FE6F87D097CE1D /* Pods_Eagle_Books_2_0.framework */; };
+		578D147622764D610041702B /* ItemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D147522764D610041702B /* ItemDetailTableViewController.swift */; };
 		57C0A6B92272135F00EBDEC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6B82272135F00EBDEC2 /* AppDelegate.swift */; };
 		57C0A6BB2272135F00EBDEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6BA2272135F00EBDEC2 /* ViewController.swift */; };
 		57C0A6BE2272135F00EBDEC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C0A6BC2272135F00EBDEC2 /* Main.storyboard */; };
@@ -15,16 +16,15 @@
 		57C0A6C32272136300EBDEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C0A6C12272136300EBDEC2 /* LaunchScreen.storyboard */; };
 		57C0A6CB227213AA00EBDEC2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6CA227213A900EBDEC2 /* Item.swift */; };
 		57C0A6CD227214E500EBDEC2 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6CC227214E500EBDEC2 /* Items.swift */; };
-		57C0A6CF22721B7D00EBDEC2 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6CE22721B7D00EBDEC2 /* ItemDetailViewController.swift */; };
 		57C0A6D122721B8E00EBDEC2 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6D022721B8E00EBDEC2 /* ItemListViewController.swift */; };
 		57C0A6D32272312C00EBDEC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57C0A6D22272312C00EBDEC2 /* GoogleService-Info.plist */; };
 		57C0A6D52272464D00EBDEC2 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6D42272464D00EBDEC2 /* UIView+addBorder.swift */; };
-		57C0A6D722727B4B00EBDEC2 /* Double+roundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0A6D622727B4B00EBDEC2 /* Double+roundTo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FB559EA58FE6F87D097CE1D /* Pods_Eagle_Books_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eagle_Books_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E407FF6E8A102326E1BE767 /* Pods-Eagle Books 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle Books 2.0.debug.xcconfig"; path = "Target Support Files/Pods-Eagle Books 2.0/Pods-Eagle Books 2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		578D147522764D610041702B /* ItemDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTableViewController.swift; sourceTree = "<group>"; };
 		57C0A6B52272135F00EBDEC2 /* Eagle Books 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eagle Books 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C0A6B82272135F00EBDEC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C0A6BA2272135F00EBDEC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,11 +34,9 @@
 		57C0A6C42272136300EBDEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57C0A6CA227213A900EBDEC2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		57C0A6CC227214E500EBDEC2 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
-		57C0A6CE22721B7D00EBDEC2 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		57C0A6D022721B8E00EBDEC2 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		57C0A6D22272312C00EBDEC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57C0A6D42272464D00EBDEC2 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
-		57C0A6D622727B4B00EBDEC2 /* Double+roundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundTo.swift"; sourceTree = "<group>"; };
 		D1DF2D422F352089BD2C1BD6 /* Pods-Eagle Books 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eagle Books 2.0.release.xcconfig"; path = "Target Support Files/Pods-Eagle Books 2.0/Pods-Eagle Books 2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,14 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				57C0A6B82272135F00EBDEC2 /* AppDelegate.swift */,
-				57C0A6CE22721B7D00EBDEC2 /* ItemDetailViewController.swift */,
+				578D147522764D610041702B /* ItemDetailTableViewController.swift */,
 				57C0A6D022721B8E00EBDEC2 /* ItemListViewController.swift */,
 				57C0A6CA227213A900EBDEC2 /* Item.swift */,
 				57C0A6CC227214E500EBDEC2 /* Items.swift */,
 				57C0A6BC2272135F00EBDEC2 /* Main.storyboard */,
 				57C0A6BA2272135F00EBDEC2 /* ViewController.swift */,
 				57C0A6D42272464D00EBDEC2 /* UIView+addBorder.swift */,
-				57C0A6D622727B4B00EBDEC2 /* Double+roundTo.swift */,
 				57C0A6BF2272136300EBDEC2 /* Assets.xcassets */,
 				57C0A6C12272136300EBDEC2 /* LaunchScreen.storyboard */,
 				57C0A6C42272136300EBDEC2 /* Info.plist */,
@@ -297,11 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C0A6D722727B4B00EBDEC2 /* Double+roundTo.swift in Sources */,
-				57C0A6CF22721B7D00EBDEC2 /* ItemDetailViewController.swift in Sources */,
 				57C0A6D52272464D00EBDEC2 /* UIView+addBorder.swift in Sources */,
 				57C0A6CD227214E500EBDEC2 /* Items.swift in Sources */,
 				57C0A6BB2272135F00EBDEC2 /* ViewController.swift in Sources */,
+				578D147622764D610041702B /* ItemDetailTableViewController.swift in Sources */,
 				57C0A6CB227213AA00EBDEC2 /* Item.swift in Sources */,
 				57C0A6B92272135F00EBDEC2 /* AppDelegate.swift in Sources */,
 				57C0A6D122721B8E00EBDEC2 /* ItemListViewController.swift in Sources */,

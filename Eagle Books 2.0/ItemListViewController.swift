@@ -66,18 +66,18 @@ class ItemListViewController: UIViewController {
         switch segue.identifier ?? "" {
         case "AddItem":
             let navigationController = segue.destination as! UINavigationController
-            let destination = navigationController.viewControllers.first as! ItemDetailViewController
+            let destination = navigationController.viewControllers.first as! ItemDetailTableViewController
             destination.item = item
             if let selectedIndexPath = tableView.indexPathForSelectedRow{
                 tableView.deselectRow(at: selectedIndexPath, animated: true)
             }
         case "ShowItem":
-            let destination = segue.destination as! ItemDetailViewController
+            let destination = segue.destination as! ItemDetailTableViewController
             destination.item = item
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.item = items.itemArray[(selectedIndexPath.row)]
         default:
-            print("*** ERROR: Did not have a segue in ItemDetailViewController prepare(for segue)")
+            print("*** ERROR: Did not have a segue in ItemDetailTableViewController prepare(for segue)")
         }
     }
     
@@ -116,7 +116,8 @@ extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = items.itemArray[indexPath.row].name
-        cell.detailTextLabel?.text = "$" + String((items.itemArray[indexPath.row].price).roundTo(places: 2))
+        var price = String((items.itemArray[indexPath.row].price))
+        cell.detailTextLabel?.text = "$" + price
         return cell
     }
     
